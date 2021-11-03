@@ -9,6 +9,9 @@ public class SnakesAndLadders {
 		System.out.println(" Welcome player!! ");
 		
 		System.out.println(" Current position: " + position);
+		
+		double dice = Math.floor( (Math.random() * 10) % 6 + 1); 
+		
 	}
 
 }
