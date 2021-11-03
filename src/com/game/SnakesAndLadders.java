@@ -25,6 +25,10 @@ public class SnakesAndLadders {
 			case 1: 
 				System.out.println(" Player action: ladder");
 				position += dice;
+				if (position > 100) {
+					position -= dice;
+					System.out.println(" Exceeded 100 so not counting");
+				}
 				break;
 			case 2: 
 				System.out.println(" Player action: snake");
