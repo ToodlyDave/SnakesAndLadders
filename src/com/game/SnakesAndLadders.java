@@ -8,10 +8,27 @@ public class SnakesAndLadders {
 		int position = 0;
 		System.out.println(" Welcome player!! ");
 		
-		System.out.println(" Current position: " + position);
 		
 		double dice = Math.floor( (Math.random() * 10) % 6 + 1); 
+		System.out.println(" The dice was rolled to: " + dice);
+		int option = (int)Math.floor(Math.random() * 3); 
 		
+		switch(option) {
+		case 0: 
+			System.out.println(" Player action: nothing");
+			break;
+		case 1: 
+			System.out.println(" Player action: ladder");
+			position += dice;
+			break;
+		case 2: 
+			System.out.println(" Player action: snake");
+			position -= dice;
+			break;
+						
+		}
+		
+		System.out.println(" Current position: " + position);
 	}
 
 }
