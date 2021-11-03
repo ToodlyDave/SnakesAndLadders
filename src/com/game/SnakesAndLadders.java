@@ -11,6 +11,7 @@ public class SnakesAndLadders {
 		
 		int dice;
 		int option;
+		int roll = 0;
 		
 		
 		while (position < 100) {
@@ -39,10 +40,10 @@ public class SnakesAndLadders {
 			}
 			
 			System.out.println(" Current position: " + position);
-			
+			roll++;
 		}
 		
-		System.out.println(" Congratulations!! You won the game!!");
+		System.out.println(" Congratulations!! You took " + roll + " rolls to win the game!!");
 	}
 
 }
